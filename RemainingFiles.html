@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <title>OneDrive File Move Report</title>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no'>
+    <meta name='application-name' content='OneDrive file move Report'>
+    <link rel="stylesheet" type="text/css" href="https://cdn.pnl.gov/theme_core/pnnl-theme-core.css">
+    <link rel="icon" href="https://cdn.pnl.gov/connected/images/onedrive/favicon.ico" type="image/x-icon">
+    <style>
+      html {
+        background-color: #0078d7;
+      }
+      body {
+        margin: 0 auto;
+        font-family: 'Segoe UI', 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      #header {
+        color: white;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        overflow: hidden;
+        position: relative;
+        width: 100%
+      }
+      #header h1 {
+        color: white;
+      }
+      #header p {
+        font-size: 18px;
+        max-width: 600px;
+      }
+      #header .contentWrapper {
+        -ms-flex-align: center;
+        align-items: center;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        height: 40vh;
+        -ms-flex-pack: center;
+        justify-content: center;
+        min-height: 250px;
+        padding: 15px;
+      }
+      #header .imageWrapper {
+        -ms-flex-align: center;
+        align-items: center;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-preferred-size: 45vh;
+        flex-basis: 45vh;
+        max-height: 600px;
+        min-height: 240px;
+        position: relative;
+      }
+      #header .devicesWrapper {
+        bottom: 0;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-pack: center;
+        justify-content: center;
+        left: 0;
+        padding-bottom: 4vh;
+        padding-top: 4vh;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 1;
+      }
+      #header .devicesWrapper img {
+        height: 100%;
+        position: relative;
+        top: 4vh;
+        width: 100%;
+      }
+      #header .hero-clouds {
+        background-image: url("https://cdn.pnl.gov/connected/images/onedrive/hero_clouds.svg");
+        background-position-x: center;
+        background-position-y: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        bottom: -2px;
+        left: -2px;
+        position: absolute;
+        right: -2px;
+        top: 0px;
+      }
+      main {
+        background-color: white;
+        -ms-flex-align: center;
+        align-items: center;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-pack: center;
+        justify-content: center;
+        min-height: 250px;
+        padding: 15px;
+        padding-bottom: 50px;
+      }
+      main .content {
+        max-width: 1600px;
+      }
+      main .content ul {
+        margin-bottom: 40px;
+      }
+      footer {
+        color: white;
+        -ms-flex-align: center;
+        align-items: center;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        padding-top: 40px;
+      }
+      footer .footer-clouds {
+        background-image: url("https://cdn.pnl.gov/connected/images/onedrive/footer_clouds.svg");
+        background-position-x: center;
+        background-position-y: -1px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 20vw;
+        max-height: 140px;
+        width: 100%;
+      }
+      footer .content {
+        background-color: #3d97e3;
+        width: 100%;
+        -ms-flex-align: center;
+        align-items: center;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding-bottom: 5vw;
+        padding-top: 5vw;
+        margin-top: -3px;
+      }
+      footer h2 {
+        color: white;
+      }
+      footer p {
+        max-width: 400px;
+        text-align: center;
+      }
+      footer .btn-default {
+        background-color: white;
+      }
+    </style>
+</head>
+
+<body>
+  <section id="header">
+    <div class="contentWrapper">
+      <h1>Welcome to OneDrive</h1>
+      <p>During the migration of your data, we ran into a few files we could not transfer automatically to your OneDrive account. We have listed those files below. You may review those and then close this window at any time.</p>
+    </div>
+    <div class="imageWrapper">
+      <div class="devicesWrapper">
+        <img src="https://cdn.pnl.gov/connected/images/onedrive/hero_devices.svg" alt="OneDrive devices" class="hero-device" />
+      </div>
+      <div class="hero-clouds"></div>
+    </div>
+  </section>
+  <main>
+      <div class="content">
+        <h1>Files that did not make it to OneDrive</h1>
+        <p>The files listed below were not moved to OneDrive. Usually this is due to a temporary condition. You may move these manually to OneDrive or ignore them.</p>
+        <ul><li>C:\Users\D3X457\Desktop\Connected.url</li></ul>
+        <h1>Files that PNNL automatically excluded</h1>
+        <p>The files listed below were excluded based upon a PNNL policy. Some of these files may not belong in OneDrive as they can become corrupted.</p>
+        <ul></ul>
+  </main>
+  <footer>
+    <div class="footer-clouds"></div>
+    <div class="content">
+      <h2>Get started with OneDrive</h2>
+      <p>OneDrive for Business and Office 365 make it easy for you to share and work together on all your files.</p>
+      <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=799459">Learn More</a>
+    </div>
+  </footer>
+</body>
+</html>
